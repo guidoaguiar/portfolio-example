@@ -1,21 +1,25 @@
+import { getCharacters } from 'rickmortyapi'
+
 import { useState, useEffect } from "react";
 import "./App.css";
 import Card from "./components/card/card";
 
 function App() {
   const [data, setData] = useState([]);
+  
 
   useEffect(() => {
-    async function carregarDados() {
-      const apiUrl = "https://ocean-api-itens.onrender.com/itens";
+    async function loadData() {
 
-      const response = await fetch(apiUrl);
-      const body = await response.json();
+      const body = await getCharacters();
+      
 
-      setData(body);
+
+      setData(body.data.results);
+      console.log(body);
     }
-
-    carregarDados();
+    
+    loadData();
   }, []);
 
   return (

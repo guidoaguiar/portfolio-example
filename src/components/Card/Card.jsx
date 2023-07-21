@@ -1,16 +1,15 @@
 import "./Card.css";
 
 export default function Card(props) {
-  // console.log(props);
-
+  
   const item = props.item;
-
-  // console.log(item);
-
+  
   return (
     <div className="card">
-      <h1>{item.nome}</h1>
-      <img src={item.imagem} />
+      <h1>{item.name}</h1>
+      <h3>{item.status}</h3>
+      <img src={item.image} />
     </div>
   );
 }
+

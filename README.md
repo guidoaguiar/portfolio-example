@@ -7,6 +7,14 @@ This is just a project to show React.JS connected to a JSON provided by an API.
 - ViteJS
 - EsLint
 
+## To be added
+
+- [ ] Filter
+- [ ] Pagination
+
+## Preview
+![Preview](./public/preview.jpg)
+
 ## Authors
 
 - [@guidoaguiar](https://www.github.com/guidoaguiar)
